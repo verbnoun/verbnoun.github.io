@@ -1,7 +1,0 @@
-{
-  "extension" : {
-    "identifier" : "net.tapas-software.JekyllServe",
-    "name" : "Jekyll Serve"
-  },
-  "extensionTemplate" : "jekyllServe"
-}
