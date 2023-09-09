@@ -21,7 +21,7 @@
 title: Verb Noun
 email: nope
 description: >- # this means to ignore newlines until "baseurl:"
-  description of verbnoun is a sentance, right?
+  description of verbnoun is a sentance, right? 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://verbnoun.com" # the base hostname & protocol for your site, e.g. http://example.com
 
