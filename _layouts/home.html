@@ -23,6 +23,7 @@ layout: default
     <ul class="post-list list-unstyled">
       {%- assign date_format = site.bootstrap.date_format | default: "%b %-d, %Y" -%}
       {%- for post in posts -%}
+      
       <li class="mb-5">
         <span class="post-meta text-muted">{{ post.date | date: date_format }}</span>
         <h3>
@@ -34,6 +35,7 @@ layout: default
           {%- if site.excerpts.auto_truncate -%}{{ post.excerpt | truncatewords: 32 }}{%- else -%}{{ post.excerpt }}{%- endif -%}
         {%- endif -%}
       </li>
+      
       {%- endfor -%}
     </ul>
 
