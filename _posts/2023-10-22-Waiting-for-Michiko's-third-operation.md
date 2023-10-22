@@ -1,4 +1,3 @@
-
 ---
 	layout: post
 	title: "Waiting for Michiko's third operation"
