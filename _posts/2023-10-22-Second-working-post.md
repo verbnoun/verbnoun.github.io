@@ -11,12 +11,13 @@ Ill edit this after the fact
 *I have updated this post*
 
 <!-- quiz -->
-
 <script>
+  var correctAnswer = '{{ correct_answer }}';  // This line replaces '{{ page.correct_answer }}'
+
   function checkAnswer() {
 	var userAnswer = document.getElementById('answer').value.toLowerCase();
 	var result = document.getElementById('result');
-	if (userAnswer == '{{ page.correct_answer }}') {
+	if (userAnswer == correctAnswer) {
 	  result.innerHTML = "Correct!";
 	  result.style.color = "green";
 	} else {
@@ -28,10 +29,6 @@ Ill edit this after the fact
 
 {% assign correct_answer = "jekyll" %}
 {% assign question = "What is the name of the static site generator used here?" %}
-
-{% comment %} Store the correct answer in page variable for use in JavaScript {% endcomment %}
-{% capture correct_answer_assign %}{% assign page.correct_answer = correct_answer %}{% endcapture %}
-{{ correct_answer_assign }}
 
 <p>{{ question }}</p>
 <input type="text" id="answer" placeholder="Your answer here">
