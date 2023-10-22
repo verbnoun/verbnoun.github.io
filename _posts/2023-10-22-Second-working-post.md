@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "(updated) Second working post"
+title: "(Re-updated) Second working post"
 date: 2023-10-22 18:43:54
 categories: fresh
 ---
@@ -9,3 +9,4 @@ categories: fresh
 Ill edit this after the fact
 
 *I have updated this post*
+
