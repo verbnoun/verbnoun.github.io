@@ -10,13 +10,30 @@ Ill edit this after the fact
 
 *I have updated this post*
 
-<!-- random quote -->
+<!-- quiz -->
 
-{% assign quotes = "The only way to do great work is to love what you do.|Don't watch the clock; do what it does. Keep going.|The future depends on what you do today.|Don't watch the clock; do what it does. Keep going.|Success is not the key to happiness. Happiness is the key to success." | split: "|" %}
+<script>
+  function checkAnswer() {
+	var userAnswer = document.getElementById('answer').value.toLowerCase();
+	var result = document.getElementById('result');
+	if (userAnswer == '{{ page.correct_answer }}') {
+	  result.innerHTML = "Correct!";
+	  result.style.color = "green";
+	} else {
+	  result.innerHTML = "Incorrect. Try again.";
+	  result.style.color = "red";
+	}
+  }
+</script>
 
-{% assign random = site.time | date: "%N" | modulo: quotes.size %}
+{% assign correct_answer = "jekyll" %}
+{% assign question = "What is the name of the static site generator used here?" %}
 
-<div class="quote">
-  <p>{{ quotes[random] }}</p>
-</div>
+{% comment %} Store the correct answer in page variable for use in JavaScript {% endcomment %}
+{% capture correct_answer_assign %}{% assign page.correct_answer = correct_answer %}{% endcapture %}
+{{ correct_answer_assign }}
 
+<p>{{ question }}</p>
+<input type="text" id="answer" placeholder="Your answer here">
+<button onclick="checkAnswer()">Submit</button>
+<p id="result"></p>
