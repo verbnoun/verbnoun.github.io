@@ -11,6 +11,9 @@ Ill edit this after the fact
 *I have updated this post*
 
 <!-- quiz -->
+{% assign correct_answer = "jekyll" %}
+{% assign question = "What is the name of the static site generator used here?" %}
+
 <script>
   var correctAnswer = '{{ correct_answer }}';  // This line replaces '{{ page.correct_answer }}'
 
@@ -26,9 +29,6 @@ Ill edit this after the fact
 	}
   }
 </script>
-
-{% assign correct_answer = "jekyll" %}
-{% assign question = "What is the name of the static site generator used here?" %}
 
 <p>{{ question }}</p>
 <input type="text" id="answer" placeholder="Your answer here">
