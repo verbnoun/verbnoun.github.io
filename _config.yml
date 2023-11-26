@@ -26,12 +26,12 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://verbnoun.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-theme: minima
+# theme: minima
 # remote_theme: minima
 # remote_theme: jonaharagon/jekyll-bootstrap-theme
-plugins:
-  - jekyll-feed
-  - jekyll-remote-theme
+# plugins:
+#   - jekyll-feed
+  # - jekyll-remote-theme
 future: true
 # Exclude from processing.
 # The following items will not be processed, by default.
