@@ -6,5 +6,6 @@
   "extensionTemplate" : "jekyllServe",
   "extensionValues" : {
 
-  }
+  },
+  "openLogOnRun" : "finish"
 }
