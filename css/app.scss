@@ -5,11 +5,52 @@
   --spacing-company: 3rem;
   --font-weight: 400;
   --border-radius: 5px;
-  --font-family: 'Playfair Display', serif;
+  --font-family: 'iAWriterDuoS', sans-serif;
   --box-shadow: #444 2px 3px;
 }
 
 /* Typography */
+@font-face {
+  font-family: 'iAWriterDuoS';
+  src: url('/fonts/iawriterduos/iAWriterDuoS-Regular.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/iawriterduos/iAWriterDuoS-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/iawriterduos/iAWriterDuoS-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/iawriterduos/iAWriterDuoS-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/fonts/iawriterduos/iAWriterDuoS-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'iAWriterDuoS';
+  src: url('/fonts/iawriterduos/iAWriterDuoS-Bold.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/iawriterduos/iAWriterDuoS-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/iawriterduos/iAWriterDuoS-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/iawriterduos/iAWriterDuoS-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/fonts/iawriterduos/iAWriterDuoS-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'iAWriterDuoS';
+  src: url('/fonts/iawriterduos/iAWriterDuoS-Italic.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/iawriterduos/iAWriterDuoS-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/iawriterduos/iAWriterDuoS-Italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/iawriterduos/iAWriterDuoS-Italic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/fonts/iawriterduos/iAWriterDuoS-Italic.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: Italic;
+}
+@font-face {
+  font-family: 'iAWriterDuoS';
+  src: url('/fonts/iawriterduos/iAWriterDuoS-BoldItalic.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/iawriterduos/iAWriterDuoS-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/iawriterduos/iAWriterDuoS-BoldItalic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/iawriterduos/iAWriterDuoS-BoldItalic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/fonts/iawriterduos/iAWriterDuoS-BoldItalic.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-weight: bold;
+  font-style: italic;
+}
+
 h2,
 h3,
 hgroup> :last-child {
@@ -26,6 +67,8 @@ small {
   background-image: url("/img/take1.png");
   background-position: center;
   background-size: cover;
+  background-repeat: repeat-x;
+  min-height: 80vh;
 }
 
 header {
