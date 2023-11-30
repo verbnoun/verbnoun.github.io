@@ -6,10 +6,10 @@ date: 2023-11-18 09:07:23
 
 I shot these recently:
 
-DSCF2037.JPG
+![one](/img/DSCF2037.jpeg)
 
-DSCF2052.JPG
+![two](/img/DSCF2052.jpeg)
 
-posts/DSCF2057.JPG
+![three](/img/DSCF2057.jpeg)
 
-posts/DSCF2060.JPG
+![four](/img/DSCF2060.jpeg)
