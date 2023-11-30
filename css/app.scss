@@ -61,6 +61,24 @@ section {
   padding-bottom: 3em;
 }
 
+.txtbg {
+  position: relative;
+  overflow: hidden;
+  /* Add other styling as needed, like width and height */
+}
+
+.bgtxt {
+  position: absolute;
+  top: -2rem;
+  left: 0;
+  font-size: 10rem; /* Adjust as needed */
+  z-index: -1;
+  color: rgb(19, 28, 35);
+  font-weight: 900;
+  // letter-spacing: -2.5rem;
+  line-height: 1em;
+}
+
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {}
 // Medium devices (tablets, 768px and up)
@@ -76,7 +94,10 @@ section {
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {}
 
+
 // /global
+
+
 
 /* Nav */
 summary[role="link"].contrast:is([aria-current], :hover, :active, :focus) {
