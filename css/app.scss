@@ -1,22 +1,22 @@
 ---
 ---
-/* Global CSS variables */
+
+// globals
 :root {
-  --spacing-company: 3rem;
+  --spacing-company: 8rem;
   --font-weight: 400;
   --border-radius: 5px;
   --font-family: 'iAWriterDuoS', sans-serif;
   --box-shadow: #444 2px 3px;
 }
 
-/* Typography */
+// type
 @font-face {
   font-family: 'iAWriterDuoS';
   src: url('/fonts/iawriterduos/iAWriterDuoS-Regular.eot'); /* IE9 Compat Modes */
   src: url('/fonts/iawriterduos/iAWriterDuoS-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
        url('/fonts/iawriterduos/iAWriterDuoS-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/fonts/iawriterduos/iAWriterDuoS-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('/fonts/iawriterduos/iAWriterDuoS-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+       url('/fonts/iawriterduos/iAWriterDuoS-Regular.woff') format('woff'); /* Pretty Modern Browsers */
   font-weight: normal;
   font-style: normal;
 }
@@ -25,8 +25,7 @@
   src: url('/fonts/iawriterduos/iAWriterDuoS-Bold.eot'); /* IE9 Compat Modes */
   src: url('/fonts/iawriterduos/iAWriterDuoS-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
        url('/fonts/iawriterduos/iAWriterDuoS-Bold.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/fonts/iawriterduos/iAWriterDuoS-Bold.woff') format('woff'), /* Pretty Modern Browsers */
-       url('/fonts/iawriterduos/iAWriterDuoS-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
+       url('/fonts/iawriterduos/iAWriterDuoS-Bold.woff') format('woff'); /* Pretty Modern Browsers */
   font-weight: bold;
   font-style: normal;
 }
@@ -35,8 +34,7 @@
   src: url('/fonts/iawriterduos/iAWriterDuoS-Italic.eot'); /* IE9 Compat Modes */
   src: url('/fonts/iawriterduos/iAWriterDuoS-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
        url('/fonts/iawriterduos/iAWriterDuoS-Italic.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/fonts/iawriterduos/iAWriterDuoS-Italic.woff') format('woff'), /* Pretty Modern Browsers */
-       url('/fonts/iawriterduos/iAWriterDuoS-Italic.ttf') format('truetype'); /* Safari, Android, iOS */
+       url('/fonts/iawriterduos/iAWriterDuoS-Italic.woff') format('woff'); /* Pretty Modern Browsers */
   font-weight: normal;
   font-style: Italic;
 }
@@ -45,10 +43,13 @@
   src: url('/fonts/iawriterduos/iAWriterDuoS-BoldItalic.eot'); /* IE9 Compat Modes */
   src: url('/fonts/iawriterduos/iAWriterDuoS-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
        url('/fonts/iawriterduos/iAWriterDuoS-BoldItalic.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/fonts/iawriterduos/iAWriterDuoS-BoldItalic.woff') format('woff'), /* Pretty Modern Browsers */
-       url('/fonts/iawriterduos/iAWriterDuoS-BoldItalic.ttf') format('truetype'); /* Safari, Android, iOS */
+       url('/fonts/iawriterduos/iAWriterDuoS-BoldItalic.woff') format('woff'); /* Pretty Modern Browsers */
   font-weight: bold;
   font-style: italic;
+}
+
+a {
+  cursor: pointer;
 }
 
 h2,
@@ -61,27 +62,16 @@ small {
   color: var(--muted-color);
 }
 
-/* Header */
-.hero {
-  background-color: #394046;
-  background-image: url("/img/take1.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: repeat-x;
-  min-height: 80vh;
+form.grid {
+  grid-row-gap: 0;
 }
 
-header {
-  padding: var(--spacing-company) 0;
-}
+// .container {
+//   margin-left: 1em;
+//   margin-right:1em;
+// }
 
-header hgroup> :last-child {
-  color: var(--h3-color);
-}
-
-header hgroup {
-  margin-bottom: var(--spacing-company);
-}
+// /global
 
 /* Nav */
 summary[role="link"].contrast:is([aria-current], :hover, :active, :focus) {
@@ -89,65 +79,70 @@ summary[role="link"].contrast:is([aria-current], :hover, :active, :focus) {
   color: var(--contrast-hover);
 }
 
-/* Main */
-
-
-form.grid {
-  grid-row-gap: 0;
+// chattask
+.chattask {
+  background-image:linear-gradient(to right, rgba(255, 255, 255, 0.797), rgba(255, 255, 255, 0)), url('https://source.unsplash.com/tZc3vjPCk-Q');
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat-x;
+  height: 80vh;
 }
 
-/* Aside nav */
-aside img {
-  margin-bottom: 0.25rem;
+.chattask header {
+  padding: var(--spacing-company) 0;
+}
+.chattask header hgroup {
+  max-width: 50%;
+}
+.chattask header hgroup> :last-child {
+  color: var(--h3-color);
 }
 
-aside p {
+.chattask header hgroup {
   margin-bottom: var(--spacing-company);
-  line-height: 1.25;
 }
-
-.post-hero {
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
-}
-
-article {
-  box-shadow: var(--box-shadow);
-  background-color: rgba(243, 255, 247, 1);
-}
-
-a {
-  cursor: pointer;
-}
-
-/* breakpoints */
-
-
-
-// X-Small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-  
-}
-
+@media (min-width: 576px) {}
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-  
-}
-
+@media (min-width: 768px) {}
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-  
-}
-
+@media (min-width: 992px) {}
 // X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-  
+@media (min-width: 1200px) {}
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {}
+
+// VerbNoun
+.verbnoun {
+  background-image:linear-gradient(to right, rgba(255, 255, 255, 0.797), rgba(255, 255, 255, 0)), url('/img/take1.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat-x;
+  height: 80vh;
 }
 
-// XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) {
-  
+.verbnoun header {
+  padding: var(--spacing-company) 0;
 }
+.verbnoun header hgroup {
+  max-width: 50%;
+}
+.verbnoun header hgroup> :last-child {
+  color: var(--h3-color);
+}
+
+.verbnoun header hgroup {
+  margin-bottom: var(--spacing-company);
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {}
