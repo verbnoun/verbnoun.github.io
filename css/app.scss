@@ -3,11 +3,8 @@
 
 // globals
 :root {
-  --spacing-company: 8rem;
-  --font-weight: 400;
-  --border-radius: 5px;
+  // --font-weight: 400;
   --font-family: 'iAWriterDuoS', sans-serif;
-  --box-shadow: #444 2px 3px;
 }
 
 // type
@@ -58,18 +55,26 @@ hgroup> :last-child {
   font-weight: 200;
 }
 
-small {
-  color: var(--muted-color);
+section {
+  margin: 0;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 
-form.grid {
-  grid-row-gap: 0;
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .g50 {
+    width: 50%;
+  }
 }
-
-// .container {
-//   margin-left: 1em;
-//   margin-right:1em;
-// }
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {}
 
 // /global
 
@@ -81,26 +86,11 @@ summary[role="link"].contrast:is([aria-current], :hover, :active, :focus) {
 
 // chattask
 .chattask {
-  background-image:linear-gradient(to right, rgba(255, 255, 255, 0.797), rgba(255, 255, 255, 0)), url('https://source.unsplash.com/tZc3vjPCk-Q');
+  background-image:linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url('https://source.unsplash.com/tZc3vjPCk-Q');
   background-position: center;
   background-size: cover;
-  background-repeat: repeat-x;
-  height: 80vh;
 }
 
-.chattask header {
-  padding: var(--spacing-company) 0;
-}
-.chattask header hgroup {
-  max-width: 50%;
-}
-.chattask header hgroup> :last-child {
-  color: var(--h3-color);
-}
-
-.chattask header hgroup {
-  margin-bottom: var(--spacing-company);
-}
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {}
@@ -119,22 +109,8 @@ summary[role="link"].contrast:is([aria-current], :hover, :active, :focus) {
   background-position: center;
   background-size: cover;
   background-repeat: repeat-x;
-  height: 80vh;
 }
 
-.verbnoun header {
-  padding: var(--spacing-company) 0;
-}
-.verbnoun header hgroup {
-  max-width: 50%;
-}
-.verbnoun header hgroup> :last-child {
-  color: var(--h3-color);
-}
-
-.verbnoun header hgroup {
-  margin-bottom: var(--spacing-company);
-}
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {}

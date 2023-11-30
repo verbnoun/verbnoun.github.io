@@ -4,7 +4,7 @@ title: "Home Page"
 ---
 
 <!-- nav -->
-  <nav class="container-fluid">
+  <!-- <nav class="container-fluid">
   <ul>
     <li>
       <a href="./" class="contrast" onclick="event.preventDefault()">
@@ -39,134 +39,120 @@ title: "Home Page"
       </details>
     </li>
   </ul>
-</nav>
+</nav> -->
 <!-- ./nav -->
 
-
-
-  <!-- chattask -->
-  <div class="hero chattask">
-    <header class="container">
-      <div class="grid">
-        <div>
-          <nav>
-            <ul>
-              <li><strong>Make it a to do</strong></li>
-            </ul>
-            <ul>
-              <li><kbd>PP</kbd></li>
-              <li><kbd>DDD</kbd></li>
-            </ul>
-          </nav>
-          <hgroup>
-            <h2>Chat Task</h2>
-            <h3>A <i>next steps</i> workflow for group chat.</h3>
-          </hgroup>
-          <p>Group chats are great, but now what? Getting things out of a group chat needs some help. <a>Have a look ...</a></p>
-        </div>
-      </div>
-    </header>
+<!-- chattask -->
+<section data-theme="light" class="chattask">
+  <header class="container">
+    <nav>
+      <ul>
+        <li><strong>Make it a to do</strong></li>
+      </ul>
+      <ul>
+        <li><kbd>PP</kbd></li>
+        <li><kbd>DDD</kbd></li>
+        <li><kbd>LMNOP</kbd></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="grid">
+      <hgroup>
+        <h2>Chat Task</h2>
+        <h3>A <i>next steps</i> workflow for group chat.</h3>
+      </hgroup>
+      <p>Group chats are great, but now what? Getting things out of a group chat needs some help. <a>Have a look ...</a></p>
+    </div>
   </div>
-  
-  <!-- verbnoun -->
-  <div class="hero verbnoun">
-    <header class="container">
+  <footer  class="container">
+    <p>bottom of the section</p>
+  </footer>
+</section>
+
+<!-- digicam -->
+<section data-theme="dark" class="digicam">
+  <header class="container">
+    <nav>
+      <ul>
+        <li><strong>Digital Bicameralism</strong></li>
+      </ul>
+      <ul>
+        <li><kbd>PP</kbd></li>
+        <li><kbd>DDD</kbd></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="grid">
+      <div>
+        <hgroup>
+          <h2>IA Writer AI Integration</h2>
+          <h3>Yeah, thats a good idea, lets use that...</h3>
+        </hgroup>
+        <p>I use IA Writer to write all kinds of things. LLM AI is neat and can help while writing. <a>This is my imagined integration of AI into IA writer.</a></p>
+      </div>
+      <img class="post-hero" src="https://source.unsplash.com/hND1OG3q67k" alt="Architecture" />
+    </div>
+  </div>
+  <footer  class="container">
+    <p>bottom of the section</p>
+  </footer>
+</section>
+
+<!-- verbnoun -->
+<section data-theme="light" class="verbnoun">
+  <header class="container">
+    <nav>
+      <ul>
+        <li><strong>Lets make a imaginegram, of <i>ideas</i>!</strong>
+      </ul>
+      <ul>
+        <li><kbd>PP</kbd></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="g50">
       <hgroup>
         <h1>Jackson … <i>Online!</i></h1>
         <h2>This is an up-to-date sketch pad for my UX UI efforts.</h2>
       </hgroup>
-    </header>
+      <p>some text about verbnoun.com</p>
+    </div>
   </div>
-
-
-
-<!-- Main -->
-<main class="container">
-  
-  
-
-    <!-- POSSST -->
-    <section>
-      
-    </section>
-    <!-- /POSSST -->
-    
-    <!-- POSSST -->
-    <section>
-      <div class="grid">
-        <div>
-          <nav>
-            <ul>
-              <li><strong>Digital Bicameralism</strong></li>
-            </ul>
-            <ul>
-              <li><kbd>PP</kbd></li>
-              <li><kbd>DDD</kbd></li>
-            </ul>
-          </nav>
-          <hgroup>
-            <h2>IA Writer AI Integration</h2>
-            <h3>Yeah, thats a good idea, lets use that...</h3>
-          </hgroup>
-          <p>
-            I use IA Writer to write all kinds of things. LLM AI is neat and can help while writing. <a>This is my imagined integration of AI into IA writer.</a>
-          </p>
-        </div>
-        <img class="post-hero" src="https://source.unsplash.com/hND1OG3q67k" alt="Architecture" />
-      </div>
-    </section>
-    <!-- /POSSST -->
-    
-    <aside>
-      <h2>Posts:</h2>
-      <div class="container">
-        <ul>
-        {% for category in site.categories %}
-          <li><h3><a name="{{ category | first }}">{{ category | first }}</a></h3>
-            <ul>
-            {% for post in category.last %}
-              <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-            {% endfor %}
-            </ul>
-          </li>
-        {% endfor %}
-        </ul>
-      </div>
-    </aside>
-
-</main>
-<!-- ./ Main -->
-
-
-<!-- Subscribe -->
-<section aria-label="Subscribe example">
-  <div class="container">
-    <article>
-      <hgroup>
-        <h2>GIVE ME YOUR ADDRESS</h2>
-        <h3>Litora torquent per conubia nostra</h3>
-      </hgroup>
-      <form class="grid">
-        <input
-          type="text"
-          id="firstname"
-          name="firstname"
-          placeholder="First name"
-          aria-label="First name"
-          required
-        />
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Email address"
-          aria-label="Email address"
-          required
-        />
-        <button type="submit" onclick="event.preventDefault()">Subscribe</button>
-      </form>
-    </article>
-  </div>
+  <footer  class="container">
+    <p>bottom of the section</p>
+  </footer>
 </section>
-<!-- ./ Subscribe -->
+
+
+
+
+<!-- article template -->
+  <!-- <div data-theme="light" class="verbnoun">
+    <header class="container">
+      <nav>
+        <ul>
+          <li><strong>this is the sample blurb</strong></li>
+        </ul>
+        <ul>
+          <li><kbd>PP</kbd></li>
+          <li><kbd>DDD</kbd></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="grid">
+        <hgroup>
+        <h1>tis a section with the class verbnoun</h1>
+        <h2>with a grid</h2>
+        </hgroup>
+        <p>and a hgroup and nav above the grid</p>
+      </div>
+    </div>
+    <footer  class="container">
+      <p>bottom of the section</p>
+    </footer>
+  </div> -->
 
