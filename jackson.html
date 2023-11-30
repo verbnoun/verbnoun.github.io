@@ -7,15 +7,10 @@ title: "Jackson"
 	<h1 class="bgtxt">Verb Noun</h1>
 	<p>Oh! you'd like to know more about me? Thank you ... lets see,</p>
 	<!-- blog loop -->
-	<time>23/11/30</time>
-	<div>
-		<p>I'm reading two books right now, <a href="https://en.wikipedia.org/wiki/V.">"V" by Thomas Pynchon</a> and <a href="https://en.wikipedia.org/wiki/The_Elements_of_Typographic_Style">"The Elements of Typographical Style" by Robert Bringhurst</a></p>
-	</div>
-
-	{% for post in site.posts %}
+	<{% for post in site.posts %}
   	<time>{{ post.date | date: "%y/%m/%d" }}</time>
 	<div>
-  		{{ post.content | strip_html }}
+  		{{ post.content }}
 	</div>
 	{% endfor %}
 
