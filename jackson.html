@@ -6,14 +6,23 @@ title: "Jackson"
 <section class="txtbg container">
 	<h1 class="bgtxt">Verb Noun</h1>
 	<p>Oh! you'd like to know more about me? Thank you ... lets see,</p>
-	<!-- blog loop -->
-	{% for post in site.posts %}
-  	<time>{{ post.date | date: "%y/%m/%d" }}</time>
-	<div>
-  		{{ post.content }}
+	<div class="row">
+		<div class="order-12 col">
+			<!-- blog loop -->
+			{% for post in site.posts %}
+		  	<time>{{ post.date | date: "%y/%m/%d" }}</time>
+			<div>
+			  	{{ post.content }}
+			</div>
+			{% endfor %}
+			<!-- end blog loop -->
+		</div>
+		<div class="col">
+			<p>Here's a bit about me and the tools i use.</p>
+			<p>I voted for Al Gore and my first email address looked like an IP address @ compuserve.com</p>
+			<p>This "web site"&#8482; is built on <a href="https://jekyllrb.com">Jekyll</a> with <a href="https://picocss.com">Pico.css</a> and hosted at <a href="https://github.com">Github</a>.
+			<p>I use <a href="https://ia.net/writer">IA Writer</a> to write, <a href="https://nova.app">Nova</a>to code, and <a href="https://www.figma.com">Figma</a> to formalize my ideas for engineers<sup>♡</sup>.</p>
+		</div>
 	</div>
-	{% endfor %}
-
 	
-	<!-- end blog loop -->
 </section>

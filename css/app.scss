@@ -60,7 +60,9 @@ section {
   padding-top: 3em;
   padding-bottom: 3em;
 }
-
+sup {
+  font-size: .5rem;
+}
 .txtbg {
   position: relative;
   overflow: hidden;
@@ -79,31 +81,25 @@ section {
   line-height: 1em;
 }
 
+
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {}
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {}
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-  .g50 {
-    width: 50%;
-  }
-}
+@media (min-width: 992px) {}
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {}
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {}
 
 
+
 // /global
 
 
 
-/* Nav */
-summary[role="link"].contrast:is([aria-current], :hover, :active, :focus) {
-  background-color: transparent;
-  color: var(--contrast-hover);
-}
+// Portfolio items
 
 // chattask
 .chattask {
