@@ -4,4 +4,6 @@
 - [ ] llm video stream image detection
 - [ ] parabolic microphone
 - [ ] rpi0 bt scout
-![unlicense](https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/PD-icon-black.svg/280px-PD-icon-black.svg.png){width=10 height=10}
+
+<img alt="unlicense" src="[http://....jpg](https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/PD-icon-black.svg/280px-PD-icon-black.svg.png)" width="20" height="20" />
+
